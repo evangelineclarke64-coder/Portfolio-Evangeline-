@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — Evangeline Z. Clarke</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="logo" href="index.html">Evangeline Z. Clarke</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contact-page container">
+    <h1>Contact Me</h1>
+    <p>Email me at <a href="mailto:evangelineclarke2000@gmil.com">evangelineclarke2000@gmil.com</a></p>
+    <form id="contactForm" class="contact-form" action="#" method="post" onsubmit="return false;">
+      <label>Your Name<input type="text" name="name" required></label>
+      <label>Your Email<input type="email" name="email" required></label>
+      <label>Message<textarea name="message" rows="5" required></textarea></label>
+      <div class="form-actions">
+        <button type="submit" class="btn" id="submitBtn">Send</button>
+        <button type="reset" class="btn outline">Reset</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Confirmation Modal -->
+  <div id="confirmModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" data-close>&times;</button>
+      <p>Are you sure you want to submit this form?</p>
+      <div class="modal-actions">
+        <button id="confirmSubmit" class="btn">Confirm</button>
+        <button class="btn outline" data-close>Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Evangeline Z. Clarke — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
